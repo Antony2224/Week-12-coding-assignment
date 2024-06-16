@@ -22,7 +22,7 @@ public class Employee {
 	@ToString.Exclude
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "pet_store_id")
-	private Long petStoreID;
+	private PetStore petStore;
 	
 	private String employeeFirstName;
 	private String employeeLastName;
